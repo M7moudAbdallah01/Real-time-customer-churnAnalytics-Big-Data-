@@ -46,7 +46,6 @@ customer_churn_data.csv -> kafka_producer.py -> Kafka topic churn_raw -> Member 
    `python kafka_producer.py`
 
    When it finishes it prints `Done. 7043 messages published to 'churn_raw'.`
-   To test with fewer rows, set `LIMIT = 200` at the top of the script.
 
 Only run the producer once. Kafka keeps the messages, so a second run adds
 every customer again and the data ends up duplicated.
